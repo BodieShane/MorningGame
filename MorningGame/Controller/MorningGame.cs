@@ -12,7 +12,7 @@ namespace MorningGame
 	/// <summary>
 	/// This is the main type for your game.
 	/// </summary>
-	public class Game1 : Game
+	public class MorningGame : Game
 	{
 		private GraphicsDeviceManager graphics;
 		private SpriteBatch spriteBatch;
@@ -29,7 +29,7 @@ namespace MorningGame
 		// A movement speed for the player
 		float playerMoveSpeed;
 
-		public Game1 ()
+		public MorningGame ()
 		{
 			graphics = new GraphicsDeviceManager (this);
 			Content.RootDirectory = "Content";
@@ -126,7 +126,7 @@ namespace MorningGame
 
 			//Update the player
 			UpdatePlayer(gameTime);
-	base.Update (gameTime);
+			base.Update (gameTime);
 		}
 
 		/// <summary>
