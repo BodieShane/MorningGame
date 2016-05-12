@@ -1,1 +1,13 @@
-﻿<Properties StartupItem="MorningGame/MorningGame.csproj" />
+﻿<Properties StartupItem="MorningGame/MorningGame.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MorningGame/Controller/MorningGame.cs">
+    <Files>
+      <File FileName="MorningGame/Model/Player.cs" Line="67" Column="3" />
+      <File FileName="MorningGame/Controller/MorningGame.cs" Line="11" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

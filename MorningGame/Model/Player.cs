@@ -7,6 +7,8 @@ namespace MorningGame.Model
 	{
 		private bool active;
 		private int score;
+		private int health;
+
 		public int Score
 		{
 			get { return score; }
@@ -26,7 +28,11 @@ namespace MorningGame.Model
 		}
 
 		// Amount of hit points that player has
-		public int Health;
+		public int Health
+		{
+			get { return health; }
+			set{ health = value; }
+		}
 
 		// Get the width of the player ship
 		public int Width
@@ -41,18 +47,24 @@ namespace MorningGame.Model
 		}
 
 
-		public void Initilize()
+		public void Initialize(Texture2D texture, Vector2 position)
 		{
+			this.active = true;
+			this.health = 100;
+			this.score = 0;
+			this.PlayerTexture = texture;
+			this.Position = position;
 
 		}
 		public void Update()
 		{
 
 		}
-		public void draw()
-		{
-
+		public void Draw(SpriteBatch spriteBatch)
+		{ 
+			spriteBatch.Draw(PlayerTexture, Position, null, Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
 		}
+
 		public Player ()
 		{
 			

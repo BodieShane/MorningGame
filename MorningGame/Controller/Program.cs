@@ -23,11 +23,11 @@ namespace MorningGame
 	static class Program
     #endif
     {
-		private static MorningGame game;
+		private static Game1 game;
 
 		internal static void RunGame ()
 		{
-			game = new MorningGame ();
+			game = new Game1 ();
 			game.Run ();
 			#if !__IOS__  && !__TVOS__
 			game.Dispose ();
