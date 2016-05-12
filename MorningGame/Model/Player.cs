@@ -9,12 +9,12 @@ namespace MorningGame.Model
 		private bool active;
 		private int score;
 		private int health;
-		private Animation PlayerAnimation
+		private Animation playerAnimation;
 
 		private Animation PlayerAnimation
 		{
-			get{return PlayerAnimation;}
-			set{PlayerAnimation = value;}
+			get{return playerAnimation;}
+			set{playerAnimation = value;}
 		}
 
 		public int Score
@@ -66,6 +66,21 @@ namespace MorningGame.Model
 			this.Position = position;
 
 		}
+		// Initialize the player
+		public void Initialize(Animation animation, Vector2 position)
+		{
+			PlayerAnimation = animation;
+
+			// Set the starting position of the player around the middle of the screen and to the back
+			Position = position;
+
+			// Set the player to be active
+			Active = true;
+
+			// Set the player health
+			Health = 100;
+		}
+
 		// Update the player animation
 		public void Update(GameTime gameTime)
 		{

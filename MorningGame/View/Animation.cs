@@ -13,10 +13,8 @@ namespace MorningGame.View
 		private Texture2D spriteStrip;
 		public Texture2D SpriteStrip
 		{
-			get{
-				retrun spriteStrip;
-			}
-			set{spriteStrip = value;
+			get{ return spriteStrip; }
+			set{ spriteStrip = value; }
 		}
 
 		// The scale used to display the sprite strip
@@ -26,49 +24,49 @@ namespace MorningGame.View
 			public float Scale
 			{
 				get{return scale;}
-				set{Scale = value;}
+				set{scale = value;}
 			}
 				
 
 		// The time since we last updated the frame
 		private int elapsedTime;
-			public int elapsedTime
+			public int ElapsedTime
 			{
-				get{return elapedTime;}
-				set{elapedTime = Value;}
+			get{return elapsedTime;}
+			set{elapsedTime = value;}
 			}
 
 		// The time we display a frame until the next one
 		private int frameTime;
-			public int frameTime
+			public int FrameTime
 			{
-				get{return frameTime}
-				set{frameTime = ValueType
+			get{return frameTime;}
+			set{frameTime = value;}
 				}
 
 
 		// The number of frames that the animation contains
 		private int frameCount;
-			public int frameCount
+			public int FrameCount
 			{
-				get{return frameCount}
-				set{frameCount = ValueType
+			get{return frameCount;}
+			set{frameCount = value;}
 			}
 
 		// The index of the current frame we are displaying
 		private int currentFrame;
-				public int currentFrame
+				public int CurrentFrame
 				{
-					get{return currentFrame}
-					set{currentFrame = ValueType
+			get{return currentFrame;}
+			set{ currentFrame = value; }
 					}
 
 		// The color of the frame we will be displaying
 		private Color color;
-					public Color color
+					public Color Color
 					{
-						get{return color}
-						set{color = ValueType
+			get{return color;}
+			set{ color = value; }
 						}
 
 		// The area of the image strip we want to display
@@ -78,46 +76,46 @@ namespace MorningGame.View
 		Rectangle destinationRect = new Rectangle();
 
 		// Width of a given frame
-		public int FrameWidth;
+		public int frameWidth;
 						public int FrameWidth
 						{
-							get{return FrameWidth}
-							set{FrameWidth = ValueType
+			get{return FrameWidth;}
+			set{FrameWidth = value; }
 							}
 
 
 		// Height of a given frame
-		public int FrameHeight;
+		public int frameHeight;
 		public int FrameHeight
 		{
-		get{return FrameHeight}
-		set{FrameHeight = ValueType
+			get{return FrameHeight;}
+			set{ FrameHeight = value; }
 		}
 
 
 		// The state of the Animation
-		public bool Active;
-								public bool Active
-								{
-									get{return Active}
-									set{Active = ValueType
-									}
+		public bool active;
+		public bool Active
+		{
+			get{return Active;}
+				set{Active = value; }
+		}
 
 		// Determines if the animation will keep playing or deactivate after one run
-		public bool Looping;
-									public bool Looping
-									{
-										get{return Looping}
-										set{Looping = ValueType
+		public bool looping;
+		public bool Looping
+					{
+			get{return Looping;}
+				set{Looping = value; }
 										}
 
 		// Width of a given frame
-		public Vector2 Position;
-										public Vector2 Position
-										{
-											get{return Position}
-											set{Position = ValueType
-											}
+		public Vector2 position;
+		public Vector2 Position
+		{
+			get{return Position;}
+			set{Position = value; }
+		}
 
 		public void Initialize(Texture2D texture, Vector2 position,
 			int frameWidth, int frameHeight, int frameCount,
